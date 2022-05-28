@@ -1,0 +1,80 @@
+@import "variables";
+
+.container {
+  h1 {
+    margin: 1% 2%;
+    font-size: $title;
+    span {
+      font-size: 3rem;
+      transform: rotate(30deg);
+    }
+  }
+  h2 {
+    margin: 1% 2%;
+    font-size: $subtitle;
+  }
+
+  .canciones {
+    box-sizing: border-box;
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    padding: 20px;
+    overflow-y: auto;
+
+    background-color: $songs-color;
+    border-radius: 10px;
+
+    .cancion {
+      box-sizing: border-box;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+
+      .material-symbols-outlined {
+        float: right;
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+      .edit:hover {
+        background-color: rgb(33, 221, 205);
+      }
+      .edit:active {
+        background-color: $font-color;
+      }
+      .delete:hover {
+        background-color: rgb(237, 4, 245);
+      }
+      .delete:active {
+        background-color: $font-color;
+      }
+      div.data-cancion {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+      }
+      div.data-cancion > span {
+        width: 32%;
+        height: 1.1rem;
+        overflow: hidden;
+      }
+    }
+    .cancion:hover {
+      background-color: $songs-hover-color;
+    }
+  }
+  .canciones::-webkit-scrollbar {
+    width: 10px;
+  }
+  .canciones::-webkit-scrollbar-thumb {
+    background: $text-color;
+    border-radius: 10px;
+  }
+  .canciones::-webkit-scrollbar-track {
+    background-color: $songs-color;
+    border-radius: 0px 10px 10px 0px;
+  }
+}

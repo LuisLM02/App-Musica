@@ -1,0 +1,15 @@
+@import "variables";
+@import "menu";
+@import "botonAgregar";
+@import "form";
+
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $font-color;
+  color: $text-color;
+  font-family: $font, sans-serif;
+}

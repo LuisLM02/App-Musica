@@ -1,0 +1,27 @@
+@import "variables";
+
+.container {
+  #botonAgregar {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 3%;
+    right: 3%;
+
+    border-radius: 100%;
+    font-size: 4rem;
+    border: none;
+    color: $text-color;
+    background-color: rgb(237, 4, 245);
+    animation: cambioColor 10s;
+    animation-iteration-count: infinite;
+
+    cursor: pointer;
+  }
+  #botonAgregar:hover {
+    transform: scale(1.01);
+  }
+  #botonAgregar:active {
+    filter: brightness(1.1);
+  }
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap");
+
+$font-color: rgb(0, 0, 0);
+$text-color: white;
+$songs-color: rgb(15, 15, 15);
+$songs-hover-color: rgb(41, 41, 41);
+
+$font: "Roboto Flex";
+$title: 3rem;
+$subtitle: 2rem;
+
+@keyframes cambioColor {
+  0% {
+    background-color: rgb(237, 4, 245);
+  }
+  25% {
+    background-color: rgb(61, 44, 218);
+  }
+  50% {
+    background-color: rgb(33, 221, 205);
+  }
+  75% {
+    background-color: rgb(44, 151, 34);
+  }
+  100% {
+    background-color: rgb(237, 4, 245);
+  }
+}
